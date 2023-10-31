@@ -1,0 +1,24 @@
+PROCEDURE produitscalaire(o,^p : ARRAY_OF INTEGER[],var f:BOOLEAN)
+VAR
+    sum:INTEGER:=0
+BEGIN
+    FOR i FROM 1 TO o.length STEP 1  DO
+        sum :=sum +o[i]*p[i]
+    END_FOR
+    IF (sum=0) THEN
+        f :=TRUE
+    ELSE
+        f:=FALSE
+    END_IF
+END
+ALGORITHM algorithm_prancipal
+VAR
+    v1 : ARRAY_OF INTEGER[]:=[1,2];
+    v2 : ARRAY_OF INTEGER[]:=[4,5];
+BEGIN
+    IF (resultat = TRUE) THEN
+        write("orth")
+    ELSE
+        write("no orth")
+    END_IF
+END
